@@ -12,7 +12,7 @@ export default function HowItWorks() {
     <section className="py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-5">
         <SectionHeader tag="Simple & Easy" title="How It Works" description="Order your food in 3 simple steps" />
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-10">
           {steps.map((s, i) => (
             <div key={i} className="animate-on-scroll h-full"><StepCard index={i + 1} icon={s.icon} title={s.title} description={s.description} /></div>
           ))}

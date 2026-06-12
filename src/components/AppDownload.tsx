@@ -1,10 +1,10 @@
 export default function AppDownload() {
   return (
     <section className="py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div>
           <span className="block text-sm font-semibold text-orange-500 uppercase tracking-widest mb-3">Download App</span>
-          <h2 className="text-4xl font-bold text-gray-800 mb-5">Get Our Mobile App</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-5">Get Our Mobile App</h2>
           <p className="text-gray-500 mb-5">Order food faster with our mobile app. Available on iOS and Android.</p>
           <ul className="mb-8 list-none">
             {['Easy ordering', 'Real-time tracking', 'Exclusive app discounts'].map((item, i) => (

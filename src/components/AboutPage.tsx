@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="pt-32 pb-24 bg-white">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5">
           <SectionHeader tag="About Us" title="Our Story" description="Discover how Tasty Bites went from a small dream to your favorite food delivery service." />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -33,7 +33,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5">
           <SectionHeader tag="Timeline" title="Our Journey" description="Key milestones that shaped Tasty Bites" />
           <div className="max-w-3xl mx-auto">
             {milestones.map((m, i) => (
@@ -53,9 +53,9 @@ export default function AboutPage() {
       </section>
 
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5">
           <SectionHeader tag="Values" title="Why Choose Us" description="What makes Tasty Bites special" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
             <FeatureCard icon={<i className="fas fa-leaf" />} title="Fresh Ingredients" description="We source only the freshest ingredients from local farms and trusted suppliers." />
             <FeatureCard icon={<i className="fas fa-bolt" />} title="Fast Delivery" description="Our optimized delivery network ensures your food arrives hot and fresh every time." />
             <FeatureCard icon={<i className="fas fa-smile" />} title="Happy Service" description="Customer satisfaction is our top priority. We're here to make you smile." />
@@ -67,7 +67,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5">
           <SectionHeader tag="Testimonials" title="What Our Customers Say" description="Hear from the people who love Tasty Bites" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {reviewsData.map((r: Review, i: number) => <ReviewCard key={i} review={r} />)}

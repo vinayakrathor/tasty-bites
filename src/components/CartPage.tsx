@@ -21,14 +21,14 @@ export default function CartPage() {
   return (
     <section className="pt-32 pb-24 bg-gray-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-5">
-        <div className="flex items-center justify-between mb-8">
-          <h1 className="text-4xl font-bold text-gray-800">Your Cart ({totalItems} items)</h1>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">Your Cart ({totalItems} items)</h1>
           <button onClick={() => setPage('menu')} className="text-orange-500 text-sm font-semibold bg-transparent border-none cursor-pointer hover:underline">
             Continue Shopping
           </button>
         </div>
 
-        <div className="grid lg:grid-cols-[1fr_380px] gap-8">
+        <div className="grid lg:grid-cols-[1fr_340px] gap-6 lg:gap-8">
           <div className="flex flex-col gap-4">
             {cartItems.map(item => (
               <div key={item.product.id} className="bg-white rounded-xl shadow-md p-4 flex gap-4">

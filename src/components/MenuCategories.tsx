@@ -23,7 +23,7 @@ export default function MenuCategories() {
     <section id="menu" className="py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-5">
         <SectionHeader tag="Our Menu" title="Browse Categories" description="Explore our wide variety of delicious cuisines" />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {categories.map(c => (
             <div key={c.name} className="animate-on-scroll h-full"><CategoryCard icon={c.icon} name={c.name} count={counts[c.id] || 0} onClick={() => handleCategoryClick(c.id)} /></div>
           ))}

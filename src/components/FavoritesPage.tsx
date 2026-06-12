@@ -19,10 +19,10 @@ export default function FavoritesPage() {
 
   return (
     <section className="pt-32 pb-24 bg-gray-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-5">
+      <div className="max-w-6xl mx-auto px-5">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-orange-500 uppercase tracking-widest">Wishlist</span>
-          <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Your Favorites</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4">Your Favorites</h2>
           <p className="text-base text-gray-500">{wishlist.length} item{wishlist.length !== 1 ? 's' : ''} saved</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

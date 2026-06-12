@@ -24,7 +24,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white pt-20 pb-8">
       <div className="max-w-6xl mx-auto px-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-10 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-8 sm:gap-10 mb-12">
           <div>
             <button onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); setPage('home') }} className="font-['Pacifico',cursive] text-3xl text-white no-underline block mb-4 bg-transparent border-none cursor-pointer">🍔 Tasty<span className="text-orange-500">Bites</span></button>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">Delicious food delivered fast to your doorstep. Order now and taste the difference!</p>

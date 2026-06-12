@@ -64,8 +64,8 @@ export default function OrderPage() {
     return (
       <section className="pt-32 pb-24 bg-white min-h-screen">
         <div className="max-w-lg mx-auto px-5 text-center">
-          <div className="text-8xl mb-6">✅</div>
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Order Placed!</h1>
+          <div className="text-6xl sm:text-7xl md:text-8xl mb-6">✅</div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">Order Placed!</h1>
           <p className="text-gray-500 mb-2">Thank you, {form.name || 'Guest'}! Your order is being prepared.</p>
           <p className="text-gray-500 mb-8">We'll send a confirmation to {form.email || 'your email'}.</p>
           <button onClick={() => setPage('home')} className="inline-flex items-center gap-2 px-9 py-4 bg-orange-500 text-white text-base font-semibold rounded-full border-none cursor-pointer transition-all duration-300 hover:bg-orange-600 hover:-translate-y-0.5">
@@ -80,8 +80,8 @@ export default function OrderPage() {
     return (
       <section className="pt-32 pb-24 bg-white min-h-screen">
         <div className="max-w-lg mx-auto px-5 text-center">
-          <div className="text-8xl mb-8">🛒</div>
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Nothing to Order</h1>
+          <div className="text-6xl sm:text-7xl md:text-8xl mb-8">🛒</div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nothing to Order</h1>
           <p className="text-gray-500 mb-8">Add some items to your cart first.</p>
           <button onClick={() => { setPage('menu') }} className="inline-flex items-center gap-2 px-9 py-4 bg-orange-500 text-white text-base font-semibold rounded-full border-none cursor-pointer transition-all duration-300 hover:bg-orange-600 hover:-translate-y-0.5">
             Browse Menu
@@ -97,9 +97,9 @@ export default function OrderPage() {
   return (
     <section className="pt-32 pb-24 bg-gray-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-5">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8">Checkout</h1>
-        <div className="grid lg:grid-cols-[1fr_400px] gap-8">
-          <form onSubmit={handleSubmit} noValidate className="bg-white rounded-xl shadow-md p-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8">Checkout</h1>
+        <div className="grid lg:grid-cols-[1fr_340px] gap-6 lg:gap-8">
+          <form onSubmit={handleSubmit} noValidate className="bg-white rounded-xl shadow-md p-5 sm:p-8">
             <h2 className="text-xl font-bold text-gray-800 mb-6">Delivery Details</h2>
             <div className="grid sm:grid-cols-2 gap-4 mb-4">
               <Field error={touched.has('name') ? errors.name : null}>

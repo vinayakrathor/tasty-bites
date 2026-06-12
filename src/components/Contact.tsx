@@ -69,12 +69,12 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-5">
         <SectionHeader tag="Get In Touch" title="Contact Us" />
-        <div className="grid md:grid-cols-[1fr_2fr] gap-16">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-8 md:gap-16">
           <div className="space-y-4">
             {infoItems.map(item => <ContactInfoCard key={item.label} icon={item.icon} label={item.label} value={item.value} />)}
           </div>
           <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
-            <div className="grid sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-2 gap-5">
               <Field error={touched.has('name') ? errors.name : null}>
                 <input type="text" placeholder="Your Name *" value={form.name} onChange={e => update('name', e.target.value)} onBlur={() => blur('name')} className={inputClass('name')} />
               </Field>

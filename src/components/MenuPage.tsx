@@ -22,7 +22,7 @@ export default function MenuPage() {
     <section className="pt-32 pb-24 bg-gray-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-5">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">Our Full Menu</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Our Full Menu</h1>
           <p className="text-gray-500">Browse and filter our delicious offerings</p>
         </div>
 

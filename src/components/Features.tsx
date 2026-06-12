@@ -10,7 +10,7 @@ const features = [
 export default function Features() {
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
         {features.map(f => (
           <div key={f.title} className="animate-on-scroll h-full">
             <FeatureCard icon={f.icon} title={f.title} description={f.description} />

@@ -31,7 +31,7 @@ export default function Header() {
           {page === 'home' ? (
             navLinks.map(link => (
               <li key={link.href} className="py-3 md:py-0 border-b md:border-b-0 border-gray-100">
-                <a href={link.href} onClick={e => handleSmoothScroll(e, link.href)}
+                <a href={link.href} onClick={e => { handleSmoothScroll(e, link.href); setMenuOpen(false) }}
                   className={`relative text-sm font-medium no-underline py-1.5 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-orange-500 after:transition-all after:duration-300 ${activeSection === link.href.slice(1) ? 'text-orange-500 after:w-full' : 'text-gray-800 after:w-0 hover:after:w-full hover:text-orange-500'}`}>
                   {link.label}
                 </a>
@@ -48,7 +48,7 @@ export default function Header() {
             ))
           )}
         </ul>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 shrink-0">
           <button className="relative w-11 h-11 bg-gray-50 border-none rounded-full text-lg text-gray-800 cursor-pointer transition-colors duration-300 hover:bg-orange-500 hover:text-white" onClick={() => { setMenuOpen(false); setPage('cart') }}>
             <i className="fas fa-shopping-cart" />
             <span className="absolute -top-1 -right-1 w-5 h-5 bg-orange-500 text-white text-xs font-semibold rounded-full flex items-center justify-center">{totalItems}</span>
